@@ -23,6 +23,7 @@ let musicIndex = 0;
 let isPlaying = false;
 
 let togglePlay = () =>{
+  
     if(isPlaying){
         pauseMusic();
     }else{
@@ -75,7 +76,7 @@ let setProgressBar = (e) =>{
     const clickX = e.offsetX;
     audio.currentTime = (clickX / width) * audio.duration;
 
-    console.log(audio.duration)
+    
 }
 
 let formatTime = (time) => {
@@ -84,9 +85,9 @@ let formatTime = (time) => {
 let again = () => {
     playBtn.classList.replace('fa-pause','fa-redo');
     playBtn.setAttribute('title','resume');
-    durationBar.style.width = '0'
-    
-
+    durationBar.style.width = '0';
+    button.addEventListener('click',togglePlay);
+    isPlaying = false;
 }
 button.addEventListener('click',togglePlay);
 audio.addEventListener('ended',again);
