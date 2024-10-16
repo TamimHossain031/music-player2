@@ -49,8 +49,7 @@ let pauseMusic = () =>{
 
 }
 
-let load = (song) => {
-    console.log(song);
+let load = (song) => {    
     audio.src = song.path;
     file.textContent = song.file;
     track.textContent = song.track;
@@ -75,6 +74,8 @@ let setProgressBar = (e) =>{
     const width = bar.clientWidth;
     const clickX = e.offsetX;
     audio.currentTime = (clickX / width) * audio.duration;
+
+    console.log(audio.duration)
 }
 
 let formatTime = (time) => {
@@ -82,6 +83,7 @@ let formatTime = (time) => {
 }
 let again = () => {
     playBtn.classList.replace('fa-pause','fa-redo');
+    playBtn.setAttribute('title','resume');
     durationBar.style.width = '0'
     
 

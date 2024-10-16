@@ -89,6 +89,7 @@ body {
   background-color: #eaeff2;
   flex: 1;
   position:relative;
+  cursor:pointer;
 }
 .btn-control {
   width: 50px;
@@ -129,7 +130,7 @@ body {
   display:inline-block;
 }
 .duration {
-  
+    
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -145,6 +146,7 @@ body {
     height:4px;
    transition: width 0.5s linear;
 background: linear-gradient(135deg, #01b7cc 0%, #01a0d3 100%);
+
 
 
 }
