@@ -83,6 +83,7 @@ let formatTime = (time) => {
 let again = () => {
     playBtn.classList.replace('fa-pause','fa-redo');
     durationBar.style.width = '0'
+    
 
 }
 button.addEventListener('click',togglePlay);
