@@ -32,7 +32,7 @@ let togglePlay = () =>{
 
 let playMusic = () =>{
     isPlaying = true;
-    playBtn.classList.remove('fa-pause');
+    playBtn.classList.replace('fa-redo','fa-pause');
     playBtn.classList.replace('fa-play','fa-pause');
     audio.play();
 
@@ -56,6 +56,7 @@ let load = (song) => {
     track.textContent = song.track;
     title.textContent = song.title;
     cover.src = song.cover;
+   
 }
 let changeMusic = (direction)=>{
     musicIndex = (musicIndex + direction + song.length) % song.length;
