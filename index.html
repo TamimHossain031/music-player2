@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>music player</title>
+  </head>
+  <body>
+    <section class="music-player">
+      <div class="player-wrap">
+        <div class="audio-cover">
+          <img src="" alt="audio-cover-image" />
+        </div>
+        <div class="player">
+          <div class="title-wrap">
+            <h4 class="sub-title">
+              <span class="file">Web3</span>
+              <span class="dot"></span>
+              <span class="track">S1: E1</span>
+            </h4>
+            <h3 class="title">
+              Interstellar: pushing the boundaries of space and design
+            </h3>
+          </div>
+          <div class="progress-bar">
+            <button class="btn-control"><span><i class="fas fa-play" id="playBtn"></i></span></button>
+            <div class="bar">
+              <span class="duration-bar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="duration-wrap">
+          <p class="tag">featured</p>
+          <p class="duration"><span class="currentTime"></span> / <span class="totalDuration"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
